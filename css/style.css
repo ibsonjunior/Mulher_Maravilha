@@ -18,15 +18,13 @@ body{
 }
 
 /*Cabeçalho*/
-
-header .cabecalho{
+.logo_MM {
     background: rgba( 130, 43, 43, 0.5 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 15px );
-    -webkit-backdrop-filter: blur( 15px );
     border-radius:0 0 8px 8px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    color: rgb(216 225 231);
+    color: rgb(216, 225, 231);
     width: 100%;
     height: auto;
     display: flex;
@@ -34,32 +32,50 @@ header .cabecalho{
     justify-content: space-between;
     position: fixed;
     z-index: 2;
+    padding: 0;
 }
 
-.cabecalho .caixa_logo{
+.navbar-brand{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    gap: 0;
+    align-items: center;
+    gap: 5px;
 }
 
+.navbar-brand .nome_logo {
+    display: flex;
+    color: rgb(216, 225, 231);
+    font-size: 25px;
+}
 
-
-.caixa_logo img{
+.navbar-brand img{
     margin: 0;
+    margin-left: 10px;
     width: 8vw;
 }
 
-.cabecalho div {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    margin-right: 30px;
+.navbar-nav{
+   margin-left: 48vw; 
+   gap: 25px;
 }
-.cabecalho div a{
-    color: rgb(216 225 231);
-    font-weight: bold;
-    
+
+.nav-link{
+    color: rgb(255 254 254) !important;
+    font-size: larger;
+}
+
+.nav-link:hover{
+    color: rgb(26, 22, 22) !important;
+    transition: 0.8s;
+}
+
+.navbar-toggler-icon{
+    background-color: rgb(216 225 231);
+}
+
+.navbar-toggler{
+    border: transparent;
 }
 
 /* Home, Curiosidades e Vídeo */
@@ -85,6 +101,7 @@ header .cabecalho{
     margin-left: 35px;
     color: rgb(255 254 254);
     font-weight: bold;
+    font-size: 25px;
 }
 
 .principal .box{
@@ -98,7 +115,7 @@ header .cabecalho{
 
 .box .card{
     width: 300px;
-    height: 640px;
+    height: 670px;
     text-align: center;
     background: rgb(255,255,255);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -140,7 +157,7 @@ header .cabecalho{
     height: 80vh;
     border: 2px solid rgba(71, 177, 207, 1);
     border-radius: 31px;
-    box-shadow: 5px 5px rgba(71, 177, 207, 1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 
 /* Contato */
@@ -164,7 +181,8 @@ header .cabecalho{
     margin-left: 30px;
     margin-top: 1vh;
     margin-right: 5vh;
-    color: rgb(216 225 231);
+    color: rgb(255 254 254);
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -186,27 +204,13 @@ header .cabecalho{
 /* 350px a 570 */
 
 @media screen and (max-width:570px) {
-
-
-    header .cabecalho{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cabecalho h2{
-        display: contents;
-        margin-bottom: 5px;
-    }
-
-    .cabecalho div{
-        margin-left:2.0vw;
-        margin-right: 0;
-    }
+    .navbar-nav{
+        margin-left: 0; 
+        gap: 0px;
+     }
 
     .principal{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .principal #home{
@@ -229,7 +233,6 @@ header .cabecalho{
     height: 120vh;
     }
 
-
     .video iframe{
         width: 60vw;
         height: 40vh;
@@ -248,10 +251,12 @@ header .cabecalho{
 
 @media screen and (min-width: 571px) AND (max-width:1200px) {
 
-    header .cabecalho{
-        display: flex ;
-        flex-direction: row;
-    }
+    .navbar-nav{
+        margin-left: 0; 
+        gap: 0px;
+     }
+
+    
 
     .principal #home{
         width: 100%;
