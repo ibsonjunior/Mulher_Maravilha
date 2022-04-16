@@ -12,7 +12,8 @@
 /* Início */
 
 body{
-    background-color:  rgb(82 169 196);
+    background: rgb(120,224,133);
+    background: linear-gradient(90deg, rgba(120,224,133,1) 1%, rgba(255,171,60,1) 38%, rgba(148,233,189,1) 67%, rgba(206,223,42,1) 100%);
     font-family: 'Roboto',sans-serif;
     flex-wrap: wrap;
 }
@@ -71,12 +72,11 @@ body{
 }
 
 .navbar-toggler-icon{
-    background-color: rgb(216 225 231);
+    background-color: transparent;
 }
 
-.navbar-toggler{
-    border: transparent;
-}
+
+
 
 /* Home, Curiosidades e Vídeo */
 
@@ -155,7 +155,7 @@ body{
 .video iframe{
     width: 63.9vw;
     height: 80vh;
-    border: 2px solid rgba(71, 177, 207, 1);
+    border: 2px solid rgb(37, 37, 37);
     border-radius: 31px;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
@@ -181,7 +181,7 @@ body{
     margin-left: 30px;
     margin-top: 1vh;
     margin-right: 5vh;
-    color: rgb(255 254 254);
+    color: #fff2f2;
     font-size: 25px;
     font-weight: bold;
 }
