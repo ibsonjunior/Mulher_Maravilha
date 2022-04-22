@@ -212,7 +212,7 @@ body{
      .navbar-brand .nome_logo {
         display: flex;
         color: rgb(216, 225, 231);
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .principal{
@@ -255,7 +255,7 @@ body{
 /* Responsividade */
 /* 571px a 1100*/
 
-@media screen and (min-width: 571px) AND (max-width:1200px) {
+@media screen and (min-width: 571px) and (max-width:1200px) {
 
     .navbar-nav{
         margin-left: 0; 
